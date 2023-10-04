@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+             background-color: black;
+             }
+            a{
+                text-decoration: none;
+            }
+            .box{
+                font-size: 20px;
+                color: rgb(255, 255, 255);
+                height: 250px;
+                width: 350px;
+                border-radius: 10px;
+                background: #191919 ;
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .bottons-container{
+                display: flex;
+                justify-content: space-around;
+                height: 50px;
+                width: 150px;
+
+            }
+            button{
+                height: 30px;
+                width: 50px;
+                background: rgb(198, 226, 73);
+                border-radius: 5px;
+                color: blue;
+                font-weight: 600;
+            }
+
+            
+
+
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <p>Lambidinha no bubum domingo?</p>
+            <div class="bottons-container">
+            <bottons>
+                <a href="https://antony-passarin.github.io/laurete/">Sim</a>
+            </bottons>        
+            <bottons id="no">Nao</bottons>
+        </div>
+    </body>
+    <script>
+        let botton = document.getElementById('no');
+        let height = window.innerHeight - 50;
+        let width = window.innerWidth - 50;
+botton.addEventListener('mouseover', function() {
+    botton.style.position = "absolute";
+    botton.style.top = Math.random() * height + "px";
+    botton.style.left = Math.random() * width + "px";
+
+})
+    </script>
+        
+
+
+
+</html>
